@@ -1400,7 +1400,7 @@ async def vvod_nazvanija_platka(message: types.Message):
             #connection.close()
 async def on_startup(bot:Bot):
     await Bot.send_message(chat_id=os.getenv('MYUSERID'), text="Готова, мой Господин!",reply_markup=klava_privetstvije)
-    #await bot.send_photo(chat_id=os.getenv('MYUSERID'), photo=os.getenv('AVATARPHOTOID'))
+    await bot.send_photo(chat_id=os.getenv('MYUSERID'), photo=os.getenv('AVATARPHOTOID'))
     #await kostily_BD(Bot)
     await create_platky()
 #БЕЗ ЗАЙЦА
