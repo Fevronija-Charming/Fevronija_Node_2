@@ -453,7 +453,7 @@ async def otrisovka_symbola1(message: types.Message):
 @dp.message((F.text.lower() == "другие символы"))
 async def otrisovka_symbola2(message: types.Message):
     await message.answer(text="Вот продолжение сегмента символов на платке", reply_markup=klava_symboly2)
-@dp.message(or_f((F.text=="Восьмиугольник"),(F.text=="Квадрат"),(F.text=="Ромб"),(F.text.lower()=="Круг")))
+@dp.message(or_f((F.text=="_Восьмиугольник_"),(F.text=="_Квадрат_"),(F.text=="_Ромб_"),(F.text.lower()=="_Круг_")))
 async def znachenije_symbola1(message: types.Message):
     symbol = message.text
     connection = ps.connect(host=os.getenv("DBHOST"), database=os.getenv("DBNAMEOLD"), user=os.getenv("DBUSERNAME"),

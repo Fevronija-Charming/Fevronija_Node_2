@@ -72,10 +72,10 @@ klava_admina_uroki=ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text="проверка буфера"),KeyboardButton(text="выход")]],
     resize_keyboard=True,input_field_placeholder="Что хотите сделать?")
 klava_symboly=ReplyKeyboardMarkup(keyboard=[
-    [KeyboardButton(text="Квадрат")],
-    [KeyboardButton(text="Ромб")],
-    [KeyboardButton(text="Восьмиугольник")],
-    [KeyboardButton(text="Круг")],
+    [KeyboardButton(text="_Квадрат_")],
+    [KeyboardButton(text="_Ромб_")],
+    [KeyboardButton(text="_Восьмиугольник_")],
+    [KeyboardButton(text="_Круг_")],
     [KeyboardButton(text="ДРУГИЕ СИМВОЛЫ")],
     [KeyboardButton(text="выход")]],
     resize_keyboard=True,input_field_placeholder="Значение какого символа хотите узнать")
